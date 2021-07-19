@@ -1,0 +1,261 @@
+import "commonReactions/all.dsl";
+context
+{
+    input phone: string;
+    desired_weekday: string = "";
+    what_day: string = "";
+    see_you_soon: string = "";
+}
+
+// Прожоджение IVR Zoom
+
+start node root
+{
+    do
+    {
+        #connectSafe($phone);
+        digression disable{answering_machine, what_day};
+        #waitForSpeech(500);
+        #sendDTMF ("87459016116#");
+        wait *;
+    }
+    transitions
+    {
+        transition0: goto pre_greeting on true priority 500;
+    }
+}
+node pre_greeting
+{
+    do
+    {
+        #sendDTMF ("#");
+        wait *;
+    }
+        transitions
+    {
+        transition0: goto greeting on #messageHasIntent("ping") priority 500;
+    }
+}
+
+node greeting
+{
+    do
+    {
+        digression enable {answering_machine, what_day};
+        #say("intro");
+        wait *;
+    }
+}
+
+/*
+// откомментировать, если прохождение IVR Zoom не требуется
+start node root {
+do {
+#connectSafe($phone);
+#waitForSpeech(500);
+//  #sendDTMF ("81307501983#");
+#say("intro");
+wait *;
+}
+}
+*/
+digression schedule_haircut
+{
+    conditions
+    {
+        on #messageHasIntent("schedule_haircut");
+    }
+    do
+    {
+        #say("haircut_confirm");
+        wait *;
+    }
+    transitions
+    {
+        schedule_haircut_day: goto schedule_haircut_day on #messageHasSentiment("positive");
+        this_is_barbershop: goto this_is_barbershop on #messageHasSentiment("negative");
+    }
+}
+
+node schedule_haircut_day
+{
+    do
+    {
+        #say("day");
+        wait *;
+    }
+}
+
+node this_is_barbershop
+{
+    do
+    {
+        #say("bye_strange");
+        exit;
+    }
+}
+
+digression schedule_weekday
+{
+    conditions
+    {
+        on #messageHasData("day_of_week");
+    }
+    //за распознавание дня недели отвечают entities в файле intents.json - entities специально созданы для распознавания улиц, городов, имён, дней недели и т.п.
+    do
+    {
+        #say("day_of_week");
+        
+        if(#messageGetData("day_of_week")[0]?.value == "понедельник")
+        {
+            set $desired_weekday = "schedule_weekday_monday"; set $what_day = "what_day_monday"; set $see_you_soon = "see_you_soon_monday";
+        }
+        else if(#messageGetData("day_of_week")[0]?.value == "вторник")
+        {
+            set $desired_weekday = "schedule_weekday_tuesday"; set $what_day = "what_day_tuesday"; set $see_you_soon = "see_you_soon_tuesday";
+        }
+        else if(#messageGetData("day_of_week")[0]?.value == "среда")
+        {
+            set $desired_weekday = "schedule_weekday_wednesday"; set $what_day = "what_day_wednesday"; set $see_you_soon = "see_you_soon_wednesday";
+        }
+        else if(#messageGetData("day_of_week")[0]?.value == "четверг")
+        {
+            set $desired_weekday = "schedule_weekday_thursday"; set $what_day = "what_day_thursday"; set $see_you_soon = "see_you_soon_thursday";
+        }
+        else if(#messageGetData("day_of_week")[0]?.value == "пятница")
+        {
+            set $desired_weekday = "schedule_weekday_friday"; set $what_day = "what_day_friday"; set $see_you_soon = "see_you_soon_friday";
+        }
+        else if(#messageGetData("day_of_week")[0]?.value == "суббота")
+        {
+            set $desired_weekday = "schedule_weekday_saturday"; set $what_day = "what_day_saturday"; set $see_you_soon = "see_you_soon_saturday";
+        }
+        else if(#messageGetData("day_of_week")[0]?.value == "воскресенье")
+        {
+            set $desired_weekday = "schedule_weekday_sunday"; set $what_day = "what_day_sunday"; set $see_you_soon = "see_you_soon_sunday";
+        }
+        
+        #say("schedule_weekday",
+        {
+            desired_weekday: $desired_weekday
+        }
+        );
+        #say("something_else");
+        wait *;
+    }
+    transitions
+    {
+        can_help: goto can_help on #messageHasSentiment("positive");
+        confirm_appointment: goto confirm_appointment on #messageHasSentiment("negative");
+    }
+}
+
+node can_help
+{
+    do
+    {
+        #say("how_can_i_help");
+        wait *;
+    }
+}
+
+node confirm_appointment
+{
+    do
+    {
+        #say("see_you_soon",
+        {
+            see_you_soon: $see_you_soon
+        }
+        );
+        exit;
+    }
+}
+
+digression cancel_appt
+{
+    conditions
+    {
+        on #messageHasIntent("cancel_appt");
+    }
+    do
+    {
+        #say("cancel_booking");
+        wait *;
+    }
+    transitions
+    {
+        cancel_appt_do: goto cancel_appt_do on #messageHasSentiment("positive");
+        confirm_appointment: goto confirm_appointment on #messageHasSentiment("negative");
+    }
+}
+
+digression how_much
+{
+    conditions
+    {
+        on #messageHasIntent("how_much");
+    }
+    do
+    {
+        #say("cost");
+        wait *;
+    }
+}
+
+digression what_day
+{
+    conditions
+    {
+        on #messageHasIntent("what_day");
+    }
+    do
+    {
+        #say("what_day",
+        {
+            what_day: $what_day
+        }
+        );
+        wait *;
+    }
+    transitions
+    {
+        confirm_appointment: goto confirm_appointment on #messageHasSentiment("negative");
+    }
+}
+
+node cancel_appt_do
+{
+    do
+    {
+        #say("booking_cancelled");
+        wait *;
+    }
+    transitions
+    {
+        schedule_haircut_day: goto schedule_haircut_day on #messageHasSentiment("positive");
+        bye_bye: goto bye_bye on #messageHasSentiment("negative");
+    }
+}
+
+node bye_bye
+{
+    do
+    {
+        #say("bye_fail");
+        exit;
+    }
+}
+
+digression bye
+{
+    conditions
+    {
+        on #messageHasIntent("bye");
+    }
+    do
+    {
+        #say("bye_win");
+        exit;
+    }
+}

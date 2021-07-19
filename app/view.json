@@ -1,0 +1,278 @@
+{
+  "node::track_parcel": {
+    "common.position": {
+      "x": 600,
+      "y": 23
+    }
+  },
+  "node::missed_delivery": {
+    "common.position": {
+      "x": 600,
+      "y": 169
+    }
+  },
+  "node::where_is_point": {
+    "common.position": {
+      "x": 600,
+      "y": 315
+    }
+  },
+  "node::return_shipment": {
+    "common.position": {
+      "x": 600,
+      "y": 461
+    }
+  },
+  "node::root": {
+    "common.position": {
+      "x": 554.9037908972575,
+      "y": 1297.5858518312623
+    }
+  },
+  "node::schedule_haircut": {
+    "common.position": {
+      "x": 3599.436658240435,
+      "y": 1508.5088397290785
+    }
+  },
+  "node::cancel_appt": {
+    "common.position": {
+      "x": 1984.6182801441164,
+      "y": 1608.7125246313537
+    }
+  },
+  "node::answering_machine": {
+    "common.position": {
+      "x": 0,
+      "y": 586.304067518362
+    }
+  },
+  "node::i_will_call_back": {
+    "common.position": {
+      "x": 0,
+      "y": 461
+    }
+  },
+  "node::can_hear_you": {
+    "common.position": {
+      "x": 0,
+      "y": 689.1904684106958
+    }
+  },
+  "node::dont_understand_hangup_params": {
+    "common.position": {
+      "x": 0,
+      "y": 753
+    }
+  },
+  "node::dont_understand": {
+    "common.position": {
+      "x": 0,
+      "y": 919
+    }
+  },
+  "node::dont_understand_preprocessor": {
+    "common.position": {
+      "x": 0,
+      "y": 1085
+    }
+  },
+  "node::hello": {
+    "common.position": {
+      "x": 0,
+      "y": 1251
+    }
+  },
+  "node::hello_preprocessor": {
+    "common.position": {
+      "x": 0,
+      "y": 1417
+    }
+  },
+  "node::i_am_robot": {
+    "common.position": {
+      "x": 0,
+      "y": 1563
+    }
+  },
+  "node::repeat_preprocessor": {
+    "common.position": {
+      "x": 0,
+      "y": 1709
+    }
+  },
+  "node::repeat_hangup_params": {
+    "common.position": {
+      "x": 0,
+      "y": 1855
+    }
+  },
+  "node::repeat": {
+    "common.position": {
+      "x": 0,
+      "y": 2021
+    }
+  },
+  "node::ping": {
+    "common.position": {
+      "x": 0,
+      "y": 2207
+    }
+  },
+  "node::wait": {
+    "common.position": {
+      "x": 0,
+      "y": 2373
+    }
+  },
+  "node::sorry_wont_call": {
+    "common.position": {
+      "x": 0,
+      "y": 2519
+    }
+  },
+  "node::swear_words": {
+    "common.position": {
+      "x": 0,
+      "y": 2665
+    }
+  },
+  "node::hangup": {
+    "common.position": {
+      "x": -3.606928489017939,
+      "y": 2493.590292966421
+    }
+  },
+  "node::dont_understand_hangup": {
+    "common.position": {
+      "x": 600,
+      "y": 919
+    }
+  },
+  "node::hello_hangup": {
+    "common.position": {
+      "x": 600,
+      "y": 1251
+    }
+  },
+  "node::repeat_or_ping_hangup": {
+    "common.position": {
+      "x": 600,
+      "y": 2114
+    }
+  },
+  "node::cancel_appt_do": {
+    "common.position": {
+      "x": 2680,
+      "y": 1693.2393771021302
+    }
+  },
+  "node::schedule_haircut_do": {
+    "common.position": {
+      "x": 0,
+      "y": -300.91680261252463
+    }
+  },
+  "node:confirmIntent:confirm": {
+    "common.position": {
+      "x": 0,
+      "y": -240.4250214556137
+    }
+  },
+  "node::confirm_intent": {
+    "common.position": {
+      "x": 0,
+      "y": -197.65710898514396
+    }
+  },
+  "node::repeat_question": {
+    "common.position": {
+      "x": 0,
+      "y": -157.20097556713202
+    }
+  },
+  "node::bye": {
+    "common.position": {
+      "x": 0,
+      "y": 785.2934138087753
+    }
+  },
+  "node::weekday": {
+    "common.position": {
+      "x": -365.58077266352177,
+      "y": -239.30618075505814
+    }
+  },
+  "node:confirmIntent:confirm_intent": {
+    "common.position": {
+      "x": -1.155889526228912,
+      "y": -27.74134862949389
+    }
+  },
+  "node::bye_bye": {
+    "common.position": {
+      "x": 3210.071338685259,
+      "y": 1964.1553616474719
+    }
+  },
+  "node::confirm": {
+    "common.position": {
+      "x": -360.4317476964299,
+      "y": 20.596099868367425
+    }
+  },
+  "node::can_help": {
+    "common.position": {
+      "x": 3562.736507441413,
+      "y": 1133.0108201299824
+    }
+  },
+  "node::this_is_barbershop": {
+    "common.position": {
+      "x": 4142.638172803637,
+      "y": 1778.7532713042674
+    }
+  },
+  "node::schedule_weekday": {
+    "common.position": {
+      "x": 1986.2857015771403,
+      "y": 1047.9260047180276
+    }
+  },
+  "node::schedule_haircut_day": {
+    "common.position": {
+      "x": 3174.518132167953,
+      "y": 1687.4461676249248
+    }
+  },
+  "node::confirm_appointment": {
+    "common.position": {
+      "x": 2567.007836599988,
+      "y": 1333.298754108742
+    }
+  },
+  "node::greeting": {
+    "common.position": {
+      "x": 1480,
+      "y": 1312.4163399696688
+    }
+  },
+  "node::what_day": {
+    "common.position": {
+      "x": 1977.0988273929274,
+      "y": 1367.1758891313264
+    }
+  },
+  "node::how_much": {
+    "common.position": {
+      "x": 2680,
+      "y": 2002.7646889215573
+    }
+  },
+  "node::pre_greeting": {
+    "common.position": {
+      "x": 1050.9280437352395,
+      "y": 1319.6293218351975
+    }
+  }
+}

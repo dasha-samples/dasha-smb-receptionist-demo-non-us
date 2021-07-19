@@ -1,0 +1,174 @@
+{
+    "voice": {
+        "emotion": "good",
+        "lang": "ru-RU",
+        "speaker": "alena"
+    },
+    "phrases": [
+      {
+        "audio": "i_will_wait_1.mp3",
+        "phrase": "Хорошо, я жду"
+      },
+      {
+        "audio": "i_will_wait_2.mp3",
+        "phrase": "Конечно, я жду"
+      },
+      {
+        "audio": "i_can_hear_you_1.mp3",
+        "phrase": "Да. я вас слышу"
+      },
+      {
+        "audio": "dont_understand_1.mp3",
+        "phrase": "Извините, не расслышала, можете повторить"
+      },
+      {
+        "audio": "dont_understand_2.mp3",
+        "phrase": "Плохо слышно, повторите пожалуйста?"
+      },
+      {
+        "audio": "dont_understand_hangup.mp3",
+        "phrase": "я вас очень плохо слышу, попробуйте перезвонить. До свидания."
+      },
+      {
+        "audio": "yes_i_am_a_robot.mp3",
+        "phrase": "Да, я робот, надеюсь, это не повлияет на наш дальнейший диалог"
+      },
+      {
+        "audio": "see_you_soon_monday.mp3",
+        "phrase": "Отлично, ждём вас в понедельник. До свидания!"
+      },
+      {
+        "audio": "see_you_soon_tuesday.mp3",
+        "phrase": "Отлично, ждём вас во вторник. До свидания!"
+      },
+      {
+        "audio": "see_you_soon_wednesday.mp3",
+        "phrase": "Отлично, ждём вас в среду. До свидания!"
+      },
+      {
+        "audio": "see_you_soon_thursday.mp3",
+        "phrase": "Отлично, ждём вас в четверг. До свидания!"
+      },
+      {
+        "audio": "see_you_soon_friday.mp3",
+        "phrase": "Отлично, ждём вас в пятницу. До свидания!"
+      },
+      {
+        "audio": "see_you_soon_saturday.mp3",
+        "phrase": "Отлично, ждём вас в субботу. До свидания!"
+      },
+      {
+        "audio": "see_you_soon_sunday.mp3",
+        "phrase": "Отлично, ждём вас в воскресенье. До свидания!"
+      },
+      {
+        "audio": "schedule_weekday_monday.mp3",
+        "phrase": "Да. Есть свободный слот в понедельник. Записала вас."
+      },
+      {
+        "audio": "schedule_weekday_tuesday.mp3",
+        "phrase": "Да. Есть свободный слот во вторник. Записала вас."
+      },
+      {
+        "audio": "schedule_weekday_wednesday.mp3",
+        "phrase": "Да. Есть свободный слот в среду. Записала вас."
+      },
+      {
+        "audio": "schedule_weekday_thursday.mp3",
+        "phrase": "Да. Есть свободный слот в четверг. Записала вас."
+      },
+      {
+        "audio": "schedule_weekday_friday.mp3",
+        "phrase": "Да. Есть свободный слот в пятницу. Записала вас."
+      },
+      {
+        "audio": "schedule_weekday_saturday.mp3",
+        "phrase": "Да. Есть свободный слот в субботу. Записала вас."
+      },
+      {
+        "audio": "schedule_weekday_sunday.mp3",
+        "phrase": "Да. Есть свободный слот в воскресенье. Записала вас."
+      },
+      {
+        "audio": "something_else.mp3",
+        "phrase": "Могу я еще чем то помочь?"
+      },
+      {
+        "audio": "what_day_monday.mp3",
+        "phrase": "Вы записались к нам на приём в понедельник."
+      },
+      {
+        "audio": "what_day_tuesday.mp3",
+        "phrase": "Вы записались к нам на приём во вторник."
+      },
+      {
+        "audio": "what_day_wednesday.mp3",
+        "phrase": "Вы записались к нам на приём в среду."
+      },
+      {
+        "audio": "what_day_thursday.mp3",
+        "phrase": "Вы записались к нам на приём в четверг."
+      },
+      {
+        "audio": "what_day_friday.mp3",
+        "phrase": "Вы записались к нам на приём в пятницу."
+      },
+      {
+        "audio": "what_day_saturday.mp3",
+        "phrase": "Вы записались к нам на приём в субботу."
+      },
+      {
+        "audio": "what_day_sunday.mp3",
+        "phrase": "Вы записались к нам на приём в воскресенье."
+      },
+      {
+        "audio": "day_of_week_1.mp3",
+        "phrase": "Секунду. Проверяю свободные слоты для бронирования"
+      },
+      {
+        "audio": "day_of_week_2.mp3",
+        "phrase": "Минутку. Проверю возможность бронирования на этот день"
+      },
+      {
+        "audio": "intro.mp3",
+        "phrase": "Парикмахерская, чем я могу вам помочь?"
+      },
+      {
+        "audio": "haircut_confirm.mp3",
+        "phrase": "Вы хотите подстричься, я правильно вас поняла?"
+      },
+      {
+        "audio": "day.mp3",
+        "phrase": "Хорошо, на какой день вас записать?"
+      },
+      {
+        "audio": "bye_strange.mp3",
+        "phrase": "Вы звоните в парикмахерскую, но не хотите стричься. Это странно. Позвоните, когда вам потребуются наши услуги. Всего доброго."
+      },
+      {
+        "audio": "how_can_i_help.mp3",
+        "phrase": "Чем я могу вам помочь?"
+      },
+      {
+        "audio": "cancel_booking.mp3",
+        "phrase": "Вы хотите отменить запись?"
+      },
+      {
+        "audio": "cost.mp3",
+        "phrase": "Мужская стрижка стоит 500 рублей"
+      },
+      {
+        "audio": "booking_cancelled.mp3",
+        "phrase": "Хорошо, ваша запись удалена. Хотите перезаписаться на другой день?"
+      },
+      {
+        "audio": "bye_fail.mp3",
+        "phrase": "Я вас поняла. Если решите записаться на приём - звоните, мы всегда рады вас видеть! До свидания."
+      },
+      {
+        "audio": "bye_win.mp3",
+        "phrase": "Спасибо за ваш звонок и удачного вам дня, до свидания!"
+      }
+     
+    ]
+  }

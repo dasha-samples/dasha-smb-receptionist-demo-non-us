@@ -1,0 +1,122 @@
+{
+  "default": {
+    "voiceInfo": {
+      "emotion": "good",
+      "lang": "ru-RU",
+      "speaker": "alena"
+    },
+    "phrases": {
+      "i_will_wait": {
+        "random": [
+          [{ "text": "Хорошо, я жду" }],
+          [{ "text": "Конечно, я жду" }]
+        ]
+      },
+
+      "see_you_soon": [{ "id": "see_you_soon", "type": "phrase" }],
+      "see_you_soon_monday": [{ "text": "Отлично, ждём вас в понедельник. До свидания!" }],
+      "see_you_soon_tuesday": [{ "text": "Отлично, ждём вас во вторник. До свидания!" }],
+      "see_you_soon_wednesday": [{ "text": "Отлично, ждём вас в среду. До свидания!" }],
+      "see_you_soon_thursday": [{ "text": "Отлично, ждём вас в четверг. До свидания!" }],
+      "see_you_soon_friday": [{ "text": "Отлично, ждём вас в пятницу. До свидания!" }],
+      "see_you_soon_saturday": [{ "text": "Отлично, ждём вас в субботу. До свидания!" }],
+      "see_you_soon_sunday": [{ "text": "Отлично, ждём вас в воскресенье. До свидания!" }],
+
+      "schedule_weekday": [{ "id": "desired_weekday", "type": "phrase" }],
+      "schedule_weekday_monday": [{ "text": "Да. Есть свободный слот в понедельник. Записала вас." }],
+      "schedule_weekday_tuesday": [{ "text": "Да. Есть свободный слот во вторник. Записала вас." }],
+      "schedule_weekday_wednesday": [{ "text": "Да. Есть свободный слот в среду. Записала вас." }],
+      "schedule_weekday_thursday": [{ "text": "Да. Есть свободный слот в четверг. Записала вас." }],
+      "schedule_weekday_friday": [{ "text": "Да. Есть свободный слот в пятницу. Записала вас." }],
+      "schedule_weekday_saturday": [{ "text": "Да. Есть свободный слот в субботу. Записала вас." }],
+      "schedule_weekday_sunday": [{ "text": "Да. Есть свободный слот в воскресенье. Записала вас." }],
+
+      "what_day": [{ "id": "what_day", "type": "phrase" }],
+      "what_day_monday": [{ "text": "Вы записались к нам на приём в понедельник." }],
+      "what_day_tuesday": [{ "text": "Вы записались к нам на приём во вторник." }],
+      "what_day_wednesday": [{ "text": "Вы записались к нам на приём в среду." }],
+      "what_day_thursday": [{ "text": "Вы записались к нам на приём в четверг." }],
+      "what_day_friday": [{ "text": "Вы записались к нам на приём в пятницу." }],
+      "what_day_saturday": [{ "text": "Вы записались к нам на приём в субботу." }],
+      "what_day_sunday": [{ "text": "Вы записались к нам на приём в воскресенье." }],
+
+      "i_can_hear_you": [{ "text": "Да. я вас слышу" }],
+      "dont_understand": {
+        "random": [
+          [
+            {
+              "text": "Извините, не расслышала, можете повторить"
+            }
+          ],
+          [
+            {
+              "text": "Плохо слышно, повторите пожалуйста?"
+            }
+          ]
+        ]
+      },
+      "dont_understand_hangup": [
+        {
+          "text": "я вас очень плохо слышу, попробуйте перезвонить. До свидания."
+        }
+      ],
+      "something_else": [
+        {
+          "text": "Могу я еще чем то помочь?"
+        }
+      ],
+      "yes_i_am_a_robot": [
+        {
+          "text": "Да, я робот, надеюсь, это не повлияет на наш дальнейший диалог"
+        }
+      ],
+      "intro": [{"text": "Парикмахерская, чем я могу вам помочь?"}],
+      "haircut_confirm": [{"text": "Вы хотите подстричься, я правильно вас поняла?"}],
+      "day": [{"text": "Хорошо, на какой день вас записать?"}],
+      "bye_strange": [{"text": "Вы звоните в парикмахерскую, но не хотите стричься. Это странно. Позвоните, когда вам потребуются наши услуги. Всего доброго."}],
+      "how_can_i_help": [{"text": "Чем я могу вам помочь?"}],
+      "cancel_booking": [{"text": "Вы хотите отменить запись?"}],
+      "cost": [{"text": "Мужская стрижка стоит 500 рублей"}],
+      "booking_cancelled": [{"text": "Хорошо, ваша запись удалена. Хотите перезаписаться на другой день?"}],
+      "bye_fail": [{"text": "Я вас поняла. Если решите записаться на приём - звоните, мы всегда рады вас видеть! До свидания."}],
+      "bye_win": [{"text": "Спасибо за ваш звонок и удачного вам дня, до свидания!"}],
+      "day_of_week": {
+        "random": [
+          [
+            {
+              "text": "Секунду. Проверяю свободные слоты для бронирования"
+            }
+          ],
+          [
+            {
+              "text": "Минутку. Проверю возможность бронирования на этот день"
+            }
+          ]
+        ]
+      }
+    },
+    "types": {},
+    "macros": {
+      "see_you_soon": {},
+      "i_will_wait": {},
+      "i_can_hear_you": {},
+      "dont_understand": {},
+      "dont_understand_hangup": {},
+      "yes_i_am_a_robot": {},
+      "what_day": {},
+      "day_of_week": {},
+      "schedule_weekday": {},
+      "intro": {},
+      "haircut_confirm": {},
+      "day": {},
+      "bye_strange": {},
+      "how_can_i_help": {},
+      "cancel_booking": {},
+      "cost": {},
+      "booking_cancelled": {},
+      "bye_fail": {},
+      "bye_win": {},
+      "something_else": {}
+    }
+  }
+}
